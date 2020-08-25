@@ -14,13 +14,13 @@
 
   <script>
 
-    let URL = "https://github.com/login/oauth/authorize";
+    let URL = "https://public-api.wordpress.com/oauth2/authorize";
 
     let options = {
-      client_id: '772ddb30cdab321939f7',
+      client_id: '70143',
       redirect_uri: 'http://localhost:3000/oauth',
-      scope: 'read:user',
-      state: '401appconsent'
+      response_type: 'code',
+      
     }
 
     let QueryString = Object.keys(options).map((key) => {

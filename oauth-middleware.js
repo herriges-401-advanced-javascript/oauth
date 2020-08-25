@@ -8,16 +8,17 @@ const users = require('./users.js');
   https://developer.github.com/apps/building-oauth-apps/
 */
 
-const tokenServerUrl = 'https://github.com/login/oauth/access_token';
-const remoteAPI = 'https://api.github.com/user';
+const tokenServerUrl = 'https://public-api.wordpress.com/oauth2/token';
+const remoteAPI = 'https://public-api.wordpress.com/oauth2/authorize';
 const API_SERVER = 'http://localhost:3000/oauth';
-const CLIENT_ID = process.env.GITHUB_CLIENT_ID;
-const CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
 module.exports = async function authorize(req, res, next) {
 
   try {
     let code = req.query.code;
+    console.log('query', req.query);
     console.log('(1) CODE:', code);
 
     let remoteToken = await exchangeCodeForToken(code);
