@@ -38,18 +38,18 @@ module.exports = async function authorize(req, res, next) {
 };
 
 async function exchangeCodeForToken(code) {
-
+ 
   let tokenResponse = await superagent.post(tokenServerUrl).send({
     code: code,
     client_id: CLIENT_ID,
     client_secret: CLIENT_SECRET,
     redirect_uri: API_SERVER,
     grant_type: 'authorization_code',
-  });
+  })
+console.log(tokenResponse, '================token response=============')
+  let token = tokenResponse.body.token;
 
-  let access_token = tokenResponse.body.access_token;
-
-  return access_token;
+  return token;
 
 }
 
