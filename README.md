@@ -18,12 +18,12 @@ The documentation was easy to read but lacking in some regards. The docs specifi
 
 System Requirements:
 Dependencies:
-    - "base-64": "^0.1.0",
-    - "bcrypt": "^5.0.0",
-    - "dotenv": "^8.2.0",
-    - "express": "^4.17.1",
-    - "jsonwebtoken": "^8.5.1",
-    - "superagent": "^6.0.0"
+- "base-64": "^0.1.0",
+- "bcrypt": "^5.0.0",
+- "dotenv": "^8.2.0",
+- "express": "^4.17.1",
+- "jsonwebtoken": "^8.5.1",
+- "superagent": "^6.0.0"
 
 Ramp Up Projections:
 It would take an indefinite ammount of time for this to be ramped up because we haven't been able to get it to take the first step. It may never walk. 
