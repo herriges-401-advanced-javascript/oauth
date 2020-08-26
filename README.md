@@ -1,8 +1,9 @@
-# oauth
-comparative analysis
-wordpress:
-research conducted by Lulu , kateryna, Matt, and Joshua.
+# Wordpress Oauth Comparative Analysis
+
+research conducted by Lulu , kateryna, Matt, and Joshua.\
+
 overall score: 2/10. 
+
 Pros: 
 1. There weren't so many docs that you got lost as a developer. 
 2. It was easy to create an application. 
